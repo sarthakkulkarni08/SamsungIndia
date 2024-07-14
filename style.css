@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+.main{
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    
+  
+  
+}
+nav{
+    height: 6vw;
+    width: 100%;
+    background-color: black;
+    border-bottom: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .logo{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  
+}
+nav .logo h1{
+    font-family: sans-serif;
+    font-weight: 500;
+    color: white;
+}
+nav .categories{
+    height: 70%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    border-left: 1px solid white;
+
+}
+nav .categories a{
+    font-size: 1.4vw;
+    text-decoration: none;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+nav .categories #ham-bar{
+    display: none;
+}
+.home{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  
+   
+ 
+}
+.home .slog{
+    height: 80%;
+    width: 90%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid white;
+    border-radius: 2vw;
+
+}
+.home .slog .left-arr,.right-arr{
+    height: 100%;
+    width: 5%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#leftarrow,#rightarrow{
+    color: rgb(0, 0, 0);
+    font-size: 1.4vw;
+    background-color: rgb(255, 255, 255);
+    height: 2.4vw;
+    width: 2.4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.slogans{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+   
+    
+}
+.slogans p{
+    font-size: 3.2vw;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 550;
+    color: white;
+    animation: SlogansTransit 0.5s ease-in-out forwards;
+
+   
+
+}
+.course-offered
+{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+overflow: hidden;
+   
+}
+.course-offered #off-course{
+    text-align: center;
+    font-size: 2.5vw;
+    font-family: sans-serif;
+    margin-top: 1vw;
+  
+}
+.course{
+    height: 100%;
+    width: 100%;
+    margin-top: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.course .course-img{
+    height: 30%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+object-fit: cover;
+    overflow: hidden;
+margin-left: 4vw;
+ background-size: cover;
+ border: 1px solid white;
+ border-radius: 1.5vw;
+
+}
+.course .course-img h1{
+    font-size: 3vw;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+.course .about-course{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-left: 1px solid white;
+  background-color: rgb(0, 0, 0);
+}
+.course .about-course #course-para1{
+    border-bottom: 1px solid white;
+    height: 7.5vw;
+    text-align: center;
+    width: 100%;
+    font-size: 1.5vw;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.course .about-course h1{
+    color: white;
+    text-align: start;
+    font-size:1.7vw ;
+    font-weight: 400;
+    margin-top: 1.2vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.course .about-course #course-para2{      
+   height:70%;
+    width: 100%;
+    font-size: 1.3vw;
+    font-family: sans-serif;
+    color: white;
+    line-height: 4vw;
+    margin-top: 1.9vw;
+    margin-left: 2vw;
+   
+}
+
+
+
+@keyframes SlogansTransit {
+    from{
+      opacity: 0;
+      transition: 0.5s all ease-in-out;
+    }
+    to{
+        opacity: 1;
+        transition: 0.5s all ease-in-out;
+      }
+    
+}
+
